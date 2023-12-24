@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="container">
+    <div class="music-player">
+      <nav>
+        <div class="circle">
+          <i class='bx bx-chevron-left'></i>
+        </div>
+        <div class="circle">
+          <i class='bx bx-menu'></i>
+        </div>
+      </nav>
+      <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHx8MHx8fDA%3D" alt="">
+      <div class="song-details">
+        <h1>Bariyaan</h1>
+      <p>atif Aslam</p>
+      </div>
+      <audio id="song">
+        <source src="03 Bariyan (Ramaiya Vastavaiya) Atf.mp3" type="audio/mpeg">
+      </audio>
+    
+        <input type="range" value="0" id="progress">
+    
+      <div class="timeShow">
+        <span id="currentTm">0:00</span>
+        <span id="durationT">0:00</span>
+      </div>
+      <div class="controls" >
+        <div>
+          <i class='bx bx-shuffle'></i>
+        </div>
+        <div>
+          <i class='bx bxs-skip-previous-circle'></i>
+        </div>
+        <div onclick="playPause()">
+          <i class='bx bx-play' id="ctrlIcon"></i>
+        </div>
+        <div>
+          <i class='bx bxs-skip-next-circle' ></i>
+        </div>
+        <div>
+          <i class='bx bx-repost'></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
